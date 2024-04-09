@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Animals in Sri Lanka
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./gallery.js"></script>
+
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="banner">
+            <h1>Gallery Page</h1>
+            <div class="imageSlider">
+                <img src="images/animal_1.jpg" alt="Image 1">
+                <img src="images/animals_3.jpg" alt="Image 2">
+                <img src="images/animals_4.jpg" alt="Image 3">
+            </div>
+        </div>
+    </header> -->
+
+
+    <header>
+        <nav>
+            <div class="nav-logo">
+                <img src="./images/logo.jpg" alt="Logo">
+                <span>WildLife</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li> <a href="conservation.html">Department</a></li>
+                <li><a href="lepord.html">Leopard</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Animals SriLanka <i class="fa fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <ul class="drplist">
+                            <li><a href="gallery.html">About Animal</a></li>
+                            <li><a href="yala.html">Yala National Park </a></li>
+                            <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+                            <!-- Add other wildlife parks as necessary -->
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="banner">
+            <div class="left">
+                <h1>Explore The<br>Life of Animals</h1>
+                <div class="button">
+                    <a href="yala.html" class="btn">Yala National Park </a>
+                    <a href="wilpattu.html" class="btn2">Wilpattu National Park</a>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="imageSlider">
+                    <img src="images/Sri_Lankan_leopard.jpg" alt="Image 1">
+                    <img src="images/elephant2.jpg" alt="Image 2">
+                    <img src="images/marine marval.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section x-data="gallerydata">
+            <section>
+                <h2 class="heading" x-text="headingh1"></h2>
+                <p class="paragraph" x-text="paragraphp1"></p>
+                <div class="imageGallery">
+                    <figure>
+                        <img src="images/marine marval.jpg" alt="Marine Animal 1">
+                        <figcaption>Corals</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/marinelife2.jpg" alt="Marine Animal 2">
+                        <figcaption>sea horse</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/marinelife3.jpg" alt="Marine Animal 3">
+                        <figcaption>dolphine</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/marinelife4.jpg" alt="Marine Animal 3">
+                        <figcaption>marine Life</figcaption>
+                    </figure>
+
+
+
+                </div>
+            </section>
+            <section>
+                <h2 class="heading" x-text="headingh2"></h2>
+                <p class="paragraph" x-text="paragraphp2"></p>
+                <div class="imageGallery">
+                    <figure>
+                        <img src="images/wildlife1.jpg" alt="Marine Animal 3">
+                        <figcaption>leopard</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/wildlife2.jpg" alt="Marine Animal 3">
+                        <figcaption>Elephant sight seeying</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/wildlife3.jpg" alt="Marine Animal 3">
+                        <figcaption>Sri lanakan Bear</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/wildlife4.jpg" alt="Marine Animal 3">
+                        <figcaption>Birds</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section>
+                <h2 class="heading" x-text="headingh3"></h2>
+                <p x-text="paragraphp3"></p>
+                <div class="imageGallery">
+                    <figure>
+                        <img src="images/birds1.jpg" alt="Marine Animal 3">
+                        <figcaption>Octopus</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/birds2.jpg" alt="Marine Animal 3">
+                        <figcaption>Octopus</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/birds3.jpg" alt="Marine Animal 3">
+                        <figcaption>Octopus</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/birds4.jpg" alt="Marine Animal 3">
+                        <figcaption>Octopus</figcaption>
+                    </figure>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Department</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Leopard</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About Animal</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Yala National Park</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Wilpattu National Park</a>
+            </div>
+
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 01234567890</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> info@wildlife.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> colombo, Sri Lanka</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+                <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="credit">&copy; 2024 wildlife. All rights reserved by <a href="#" class="link">Wildlife Department
+                SriLanka</a></div>
+
+    </section>
+</body>
+
+</html>

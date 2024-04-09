@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script>
+    fetch('https://cors-anywhere.herokuapp.com/file:///C:/Other%20stuff/APIIT/web/cb010667/cb010667/login.json')
+      .then(response => response.json())
+      .then(data => localStorage.setItem('users', JSON.stringify(data)));
+  </script>
+</head>
+
+<body class="bg">
+
+  <header class="header">
+
+    <a href="#" class="logo"> <img src="images/logo.jpg" alt=""> WildLife</a>
+
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="conservation.html">Department</a>
+      <a href="lepord.html">Leopard</a>
+      <div class="dropdown">
+        <button class="dropbtn">Animals SriLanka<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <ul class="drplist">
+            <li><a href="gallery.html">About Animal</a></li>
+            <li><a href="yala.html">Yala National Park</a></li>
+            <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+            <!-- Add other wildlife parks as necessary -->
+          </ul>
+        </div>
+      </div>
+      <button class="btnLogin-popup"> <a href="login page.html">Login </a></button>
+      <button class="btnLogin-popup"> <a href="signup.html">Sign Up </a></button>
+    </nav>
+  </header>
+
+  <div>
+    <div x-data="registerData()" class="btnSignup-popup">
+      <h2>Sign Up</h2>
+      <form id="registerForm" @submit.prevent="register">
+        <input type="text" id="username" x-model="username" placeholder="Username" required>
+        <input type="email" id="email" x-model="email" placeholder="Email" required>
+        <input type="password" id="password" x-model="password" placeholder="Password" required>
+        <button type="submit">Register</button>
+      </form>
+      <p id="message" x-text="message"></p>
+    </div>
+  </div>
+
+  <script>
+    function registerData() {
+      return {
+        username: '',
+        email: '',
+        password: '',
+        users: JSON.parse(localStorage.getItem('users')) || [],
+        message: ''
+      }
+    }
+
+    function register() {
+      // Retrieve input values
+      const new_username = this.username.trim();
+      const new_email = this.email.trim();
+      const new_password = this.password;
+
+      // Check if any required field is empty
+      if (!new_username || !new_email || !new_password) {
+        this.message = 'Please fill in all fields.';
+        return;
+      }
+
+      // Check if the email is already registered
+      if (this.users.some(user => user.email === new_email)) {
+        this.message = 'This email is already registered.';
+        return;
+      }
+
+      // Register the new user
+      this.users.push({
+        username: new_username,
+        email: new_email,
+        password: new_password
+      });
+
+      // Update localStorage
+      localStorage.setItem('users', JSON.stringify(this.users));
+
+      // Redirect to login page
+      window.location.href = 'login page.html';
+    }
+  </script>
+
+</body>
+
+</html>

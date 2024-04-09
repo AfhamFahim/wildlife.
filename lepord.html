@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Sri Lankan Leopard</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="css/lepord.css">
+   <script src="//unpkg.com/alpinejs" defer></script>
+   <script src="./lepord.js"></script>
+
+</head>
+
+<body>
+
+
+   </head>
+
+   <body>
+      <!--header section -->
+      <section class="header">
+         <img src="./images/logo.jpg" alt="logo">
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="conservation.html">Department</a>
+            <a href="lepord.html">Leopard</a>
+            <div class="dropdown">
+               <button class="dropbtn">Animals SriLanka <i class="fa fa-caret-down"></i></button>
+               <div class="dropdown-content">
+                  <ul class="drplist">
+                     <li><a href="gallery.html">About Animal</a></li>
+                     <li><a href="yala.html">Yala National Park </a></li>
+                     <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+                     <!-- Add other wildlife parks as necessary -->
+                  </ul>
+               </div>
+            </div>
+
+
+
+
+         </nav>
+      </section>
+      <!--end header section -->
+
+      <!-- home section starts  -->
+
+      <section class="home">
+
+         <div class="swiper home-slider">
+
+            <div class="swiper-wrapper">
+
+               <div class="swiper-slide slide" style="background:url(./images/Sri_Lankan_leopard.jpg
+          ) no-repeat" alt="background">
+                  <div class="content">
+                     <span>explore, discover, features</span>
+                     <h3>welcome to lepord world</h3>
+
+                  </div>
+               </div>
+
+
+            </div>
+
+
+         </div>
+
+      </section>
+
+      <!-- home section ends -->
+
+
+
+      <!-- home about section starts  -->
+
+      <section x-data="leporddata">
+
+         <section class="home-about">
+
+
+            <div class="image">
+               <img src="images/Sri-Lankan-leopard 2.jpg" alt="about">
+            </div>
+
+            <div class="content">
+               <h3   x-text="contenth1"> </h3>
+               <p x-text="contentp1"></p>
+                  <br>
+                  <b x-text="contenth2"></b>
+                  <br>
+                  <b x-text="contenth3"></b>
+                  <P x-text="contentp2"></P>
+                  <br>
+                  <b x-text="contenth4"></b>
+                  <P x-text="contentp3"></P>
+                  <br>
+                  <b x-text="contenth5"></b>
+                  <P x-text="contentp4"></P>
+               </p>
+            </div>
+
+         </section>
+
+         <!-- home about section ends -->
+
+         <!-- home packages section starts  -->
+
+         <section class="home-packages">
+
+            <h1 class="heading-title"> Threats to Sri Lankan Leopards and Conservation Efforts </h1>
+
+            <div class="box-container">
+
+               <div class="box">
+                  <div class="image">
+                     <img src="images/leopardvshuman.jpeg" alt="surfing">
+                  </div>
+                  <div class="content">
+                     <h3 class="content" x-text="contenth6"></h3>
+                     <p x-text="contentp5"></p>
+                        <br>
+                        <br><br>
+                        <b  x-text="contenth7"></b>
+                        <p x-text="contentp6"></p>
+                        <br>
+                        <br><br>
+                        <b  x-text="contenth8"></b>
+                        <p  x-text="contentp7"></p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image">
+                     <img src="images/lepord-@-tea-estatevsvillage.jpg" alt="scuba diving">
+                  </div>
+                  <div class="content">
+                     <h3 class="content" x-text="contenth9"></h3>
+                     <p x-text="contentp8"></p>
+                        <br>
+                        <br><br>
+                        <b x-text="contenth10"></b>
+                        <p x-text="contentp9"></p>
+                        <br>
+                        <br><br>
+                        <b x-text="contenth11"></b>
+                        <p x-text="contentp10"></p>
+
+                     </p>
+                  </div>
+               </div>
+
+               <div class="box">
+                  <div class="image">
+                     <img src="images/deforestation.jpg" alt="devil stair case">
+                  </div>
+                  <div class="content">
+                     <h3 class="content" x-text="contenth12"></h3>
+                     <p x-text="contentp11"></p>
+                        <br>
+                        <br><br>
+                        <b x-text="contenth13"></b>
+                        <p x-text="contentp12"></p>
+                        <br>
+                        <br><br>
+                        <b x-text="contenth14"> </b>
+                        <p x-text="contentp13"></p>
+                     </p>
+                  </div>
+               </div>
+
+            </div>
+
+
+         </section>
+      </section>
+
+      <!-- home packages section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- footer section starts  -->
+
+      <section class="footer">
+
+         <div class="box-container">
+
+            <div class="box">
+               <h3>quick links</h3>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Department</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Leopard</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About Animal</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Yala National Park</a>
+               <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Wilpattu National Park</a>
+            </div>
+
+
+            <div class="box">
+               <h3>contact info</h3>
+               <a href="#" class="links"><i class="fas fa-phone"></i> 01234567890</a>
+               <a href="#" class="links"><i class="fas fa-envelope"></i> info@wildlife.com</a>
+               <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> colombo, Sri Lanka</a>
+            </div>
+
+            <div class="box">
+               <h3>follow us</h3>
+               <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+               <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+               <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+               <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            </div>
+
+         </div>
+
+         <div class="credit">&copy; 2024 wildlife. All rights reserved by <a href="#" class="link">Wildlife Department
+               SriLanka</a></div>
+
+      </section>
+
+      <!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   </body>
+
+</html>

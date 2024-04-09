@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Sri Lanka wild life introduction
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./about.js"></script>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="#" class="logo"> <img src="images/logo.jpg" alt=""> WildLife</a>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="conservation.html">Department</a>
+            <a href="lepord.html">Leopard</a>
+            <div class="dropdown">
+                <button class="dropbtn">Animals SriLanka<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <ul class="drplist">
+                        <li><a href="gallery.html">About Animal</a></li>
+                        <li><a href="yala.html">Yala National Park</a></li>
+                        <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+                        <!-- Add other wildlife parks as necessary -->
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+
+
+
+
+    </header>
+
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Enjoy The Wonderful <br>
+                Adventure Of the <br> Animals</h3>
+            <a href="#" class="btn">meet the zoo</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- end -->
+    <!-- paragraph -->
+    <section x-data="aboutdata">
+        <section class="container">
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img class="image" src="images/Horton-Plains-National-Park.jpeg" alt="Image 1">
+                </div>
+                <div class="text-wrapper">
+                    <h3 x-text="titleh1"></h3>
+                    <p class="paragraph" x-text="titlep1"> <br> <br><b>Location: </b>Central Highlands, Sri Lanka
+                    </p>
+
+                </div>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11619.44566728929!2d80.79675687737982!3d6.808130120600533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1704132661309!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img class="image" src="images/minneriya_national_park_16.jpg" alt="Image 2">
+                </div>
+                <div class="text-wrapper">
+                    <h3 x-text="titleh2"></h3>
+                    <p class="paragraph" x-text="titlep2">
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31606.20583014117!2d80.82629419646412!3d8.022046538272004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMinneriya%20National%20Park!5e0!3m2!1sen!2slk!4v1704133874693!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="image-section">
+                <div class="image-wrapper">
+                    <img class="image" src="images/Gal+Oya+Lodge.jpg" alt="Image 3">
+                </div>
+                <div class="text-wrapper">
+                    <h3 x-text="titleh3"></h3>
+                    <p class="paragraph" x-text="titlep3">
+                        <br> <br> <b>Location: </b>Eastern Province, Sri Lanka
+                    </p>
+                    <p>
+                </div>
+                <div class="map-wrapper">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1207.3523719327584!2d81.47030813768711!3d7.228196050485466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae4e2a00da92731%3A0x2792347a67187b94!2sGal%20Oya%20Valley%20National%20Park!5e0!3m2!1sen!2slk!4v1704133975650!5m2!1sen!2slk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- end of paragraph -->
+
+
+
+    <section class="summary-table" id="summary-table">
+        <div class="table-container">
+            <h2 class="heading">Summary Table of Wildlife</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Location</th>
+                        <th>Animal Name</th>
+                        <th>Interesting Facts</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>Horton Plains</td>
+                        <td>Sambar Deer</td>
+                        <td>The Sambar Deer is the largest deer species in South Asia.</td>
+                        <td><img style="height: 30px;" src="images/sam.png" alt="Sambar Deer Image"></td>
+                    </tr>
+                    <tr>
+                        <td>Horton Plains</td>
+                        <td>Purple-faced Langur</td>
+                        <td>Endemic to Sri Lanka, recognized by its striking purple face. Prefers high elevations in the
+                            park.</td>
+                        <td><img style="height: 30px;" src="images/Purple-faced Langur.jpg" alt="Purple-faced Langur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Minneriya National Park</td>
+                        <td>Asian Elephant</td>
+                        <td>The park hosts the largest gathering of Asian elephants globally during the dry season.</td>
+                        <td><img style="height: 30px;" src="images/Asian Elephant.webp" alt="Asian Elephant"></td>
+                    </tr>
+                    <tr>
+                        <td>Minneriya National Park</td>
+                        <td>Spot-billed Pelican </td>
+                        <td>Large waterbird often seen around Minneriya Tank. Identified by its distinctive, brightly
+                            colored bill.</td>
+                        <td><img style="height: 30px;" src="images/Spot-billed Pelican.jpg" alt="Spot-billed Pelican">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gal Oya National Park</td>
+                        <td>Sri Lankan Leopard</td>
+                        <td>Elusive and solitary, the Sri Lankan leopard is a big cat species found in the forests of
+                            Gal Oya.</td>
+                        <td><img style="height: 30px;" src="images/Leopard.jpeg" alt="Sri Lankan Leopard"></td>
+                    </tr>
+                    <tr>
+                        <td>Gal Oya National Park</td>
+                        <td>Fishing Cat</td>
+                        <td>Medium-sized wildcat adapted to a semi-aquatic lifestyle. Often spotted around the park's
+                            water bodies.</td>
+                        <td><img style="height: 30px;" src="images/Fishing Cat.jpg" alt="Fishing Cat"></td>
+                    </tr>
+
+                </tbody>
+                <tfoot class="tablefoot">
+                    <tr>
+                        <td colspan="4">Table - Additional information or credits</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- table -->
+
+    <!-- end of table -->
+
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3><i class="fas fa-paw"></i> Wildlife</h3>
+                <p>Your discovery in wildlife</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 01234567890</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> info@wildlife.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> colombo, Sri Lanka</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Department</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Leopard</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About Animal</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Yala National Park</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Wilpattu National Park</a>
+
+            </div>
+
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <a href="#" class="btn">subscribe</a>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="credit">&copy; 2024 wildlife. All rights reserved by <a href="#" class="link">Wildlife Department
+                SriLanka</a></div>
+
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

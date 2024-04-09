@@ -1,0 +1,50 @@
+/* signup page.css */
+
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.bg {
+  background-image: url("image--6.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.transparent.bg {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+button {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #86bd6be0;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f6514e0;
+}
+
+/* Add additional styles specific to the signup page if needed */

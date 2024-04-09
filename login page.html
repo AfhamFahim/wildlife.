@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login page.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg">
+
+  <header class="header">
+    <a href="#" class="logo"> <img src="images/logo.jpg" alt=""> WildLife</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="conservation.html">Department</a>
+      <a href="lepord.html">Leopard</a>
+      <div class="dropdown">
+        <button class="dropbtn">Animals SriLanka<i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <ul class="drplist">
+            <li><a href="gallery.html">About Animal</a></li>
+            <li><a href="yala.html">Yala National Park</a></li>
+            <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+            <!-- Add other wildlife parks as necessary -->
+          </ul>
+        </div>
+      </div>
+      <button class="btnLogin-popup"> <a href="login page.html">Login </a></button>
+      <button class="btnLogin-popup"> <a href="signup.html">Sign Up </a></button>
+    </nav>
+  </header>
+
+  <div>
+    <div x-data="loginData()" class="btnLogin-popup">
+      <h2>Login</h2>
+      <form id="loginForm" @submit.prevent="login">
+        <input type="email" id="email" x-model="email" placeholder="Email" required>
+        <input type="password" id="password" x-model="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p id="message" x-text="message"></p>
+    </div>
+  </div>
+
+  <script>
+    function loginData() {
+      return {
+        email: '',
+        password: '',
+        message: ''
+      }
+    }
+
+    function login() {
+      // Retrieve input values
+      const entered_email = this.email.trim();
+      const entered_password = this.password;
+
+      // Check if any required field is empty
+      if (!entered_email || !entered_password) {
+        this.message = 'Please fill in all fields.';
+        return;
+      }
+
+      // Check if the entered credentials match the admin email and password
+      if (entered_email === 'admin@gmail.com' && entered_password === 'admin12') {
+        // Redirect to database page upon successful login
+        window.location.href = 'database.html';
+      } else {
+        this.message = 'Invalid email or password.';
+      }
+    }
+  </script>
+
+</body>
+
+</html>

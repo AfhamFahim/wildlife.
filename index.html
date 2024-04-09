@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Life</title>
+    <!-- font awesome -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./index.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- header -->
+
+    <header class="header">
+
+        <a href="#" class="logo"> <img src="images/logo.jpg" alt=""> WildLife</a>
+
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="conservation.html">Department</a>
+            <a href="lepord.html">Leopard</a>
+            <div class="dropdown">
+                <button class="dropbtn">Animals SriLanka<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content">
+                    <ul class="drplist">
+                        <li><a href="gallery.html">About Animal</a></li>
+                        <li><a href="yala.html">Yala National Park</a></li>
+                        <li><a href="wilpattu.html">Wilpattu National Park</a></li>
+                        <!-- Add other wildlife parks as necessary -->
+                    </ul>
+                </div>
+            </div>
+            <button class="btnLogin-popup"> <a href="login page.html">Login </a></button>
+            <button class="btnLogin-popup"> <a href="signup.html">sign up </a></button>
+        </nav>
+
+
+
+
+    </header>
+
+
+
+    <!-- end -->
+
+    <!-- home -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Enjoy The Wonderful <br>
+                Adventure Of the <br> Animals</h3>
+            <a href="#" class="btn">Explore WildLife</a>
+        </div>
+
+        <img src="images/bottom_wave.png" alt="" class="wave">
+
+    </section>
+
+    <!-- end -->
+
+    <!-- Intorduction to wildlife  -->
+    <section x-data="homedata">
+        <section class="about" id="about">
+
+            <h2 class="deco-title" x-text="intro"></h2>
+
+            <div class="box-container">
+
+                <div class="image">
+                    <img src="images/about.png" alt="">
+                </div>
+
+                <div class="content">
+                    <h3 class="title" x-text="introh3"></h3>
+                    <p x-text="introp1"></p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- end Intorduction to wildlife  -->
+        <!-- 3 sub section -->
+        <!-- main heading for 3 sub section -->
+        <section class="headings">
+            <h1>Discover the Enchanting Realms</h1>
+        </section>
+        <!-- end main heading for 3 sub section -->
+
+
+        <!-- gallery -->
+
+        <section class="sub1">
+
+            <!-- <h2 class="title"> 01. Marine Marvels: Sri Lanka's Coastal Wonders
+
+        </h2> -->
+
+
+            <div class="box-container">
+
+                <div class="image">
+                    <img src="images/marine marval.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3 class="title" x-text="titleh3"></h3>
+                    <p class="title" x-text="titlep1"> <br> <b x-text="titleb1">s:</b></p>
+                    <ul class="list">
+                        <li>Sri Lanka is home to over 6,000 flowering plants, including many endemic species.</li>
+                        <li>The island boasts more than 430 bird species, making it a paradise for birdwatchers.
+                        </li>
+                        <li>With 123 species of mammals, Sri Lanka offers a fascinating mix of terrestrial and marine
+                            wildlife.</li>
+                        <li>The country's commitment to conservation is evident through its extensive network of
+                            protected areas and national parks.</li>
+                    </ul>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- end -->
+
+
+
+        <!-- sub2  -->
+
+        <section class="sub2">
+
+
+            <div class="box-container">
+
+                <div class="image">
+                    <img src="images/sinharaja.jpg" alt="">
+                </div>
+
+                <div class="content">
+                    <h3 class="title" x-text="title2h3"></h3>
+                    <p x-text="title2p1">.</p>
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+    <!-- end of sub2-->
+
+
+
+
+    <section class="sub1">
+
+        <!-- <h2 class="title"> 01. Marine Marvels: Sri Lanka's Coastal Wonders
+
+    </h2> -->
+
+
+        <div class="box-container">
+
+            <div class="image">
+                <img src="images/yalapark.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3 class="title">03. Yala National Park: Where the Wild Roam Free</h3>
+                <p x-text="titlep2"></p>
+                <p x-text="titlep3"></p>
+                </p>
+                <ol class="list">
+                    <li>Encounter the Sri Lankan leopard, a symbol of strength and agility.</li>
+                    <li>Observe herds of elephants as they gracefully roam through the park's vast landscapes.</li>
+                    <li>Immerse yourself in the symphony of bird calls, with over 200 species recorded in Yala.</li>
+                    <li>Discover the unique flora, including endemic plant species that thrive in this natural haven.
+                    </li>
+                </ol>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- animals -->
+
+    <section class="animal" id="animal">
+
+        <h2 class="heading">animals</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/Leopard.jpeg" alt="">
+                <div class="content">
+                    <h3>Lepord</h3>
+                    <a href="gallery.html" class="btn">see datails</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/elephant.jpg" alt="">
+                <div class="content">
+                    <h3>Elephant</h3>
+                    <a href="gallery.html" class="btn">see datails</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/junglefowl.jpg" alt="">
+                <div class="content">
+                    <h3>junglefowl</h3>
+                    <a href="gallery.html" class="btn">see datails</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/animals_4.jpg" alt="">
+                <div class="content">
+                    <h3>monkey</h3>
+                    <a href="gallery.html" class="btn">see datails</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+
+    <!-- pricing -->
+
+    <section class="pricing" id="pricing">
+
+        <h2 class="heading">pricing</h2>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pricing1.png" alt="">
+                <h3>individuals</h3>
+                <h4 class="price">$ 10</h4>
+                <p>the entrance is from 8:00 to 14:00</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pricing2.png" alt="">
+                <h3>school</h3>
+                <h4 class="price">$ 20</h4>
+                <p>the entrance is from 8:00 to 14:00</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pricing1.png" alt="">
+                <h3>family</h3>
+                <h4 class="price">$ 30</h4>
+                <p>the entrance is from 8:00 to 14:00</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end -->
+
+
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+
+            <div class="box">
+                <h3><i class="fas fa-paw"></i> Wildlife</h3>
+                <p>Your discovery in wildlife</p>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i> 01234567890</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> info@wildlife.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> colombo, Sri Lanka</a>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Home</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Department</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Leopard</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>About Animal</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Yala National Park</a>
+                <a href="#" class="links"> <i class="fas fa-arrow-right"></i>Wilpattu National Park</a>
+
+            </div>
+
+            <div class="box">
+                <h3>newsletter</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="Your Email" class="email">
+                <a href="#" class="btn">subscribe</a>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="credit">&copy; 2024 wildlife. All rights reserved by <a href="#" class="link">Wildlife Department
+                SriLanka</a></div>
+
+    </section>
+
+
+
+
+
+
+    <!-- end -->
+
+
+
+
+
+    <script>
+        // Function to handle form submission
+        function handleFormSubmission(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+
+            // Get the email input value
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value;
+
+            // Check if email is provided
+            if (!email) {
+                alert('Please provide your email!');
+                return;
+            }
+
+            // Save the email to local storage
+            localStorage.setItem('newsletterEmail', email);
+
+            // Optional: You can also send the email to your server for further processing
+
+            // Clear the email input
+            emailInput.value = '';
+
+            // Optional: Show a success message to the user
+            alert('Thank you for subscribing!');
+        }
+
+        // Attach an event listener to the form submission
+        const form = document.getElementById('newsletterForm');
+        form.addEventListener('submit', handleFormSubmission);
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
